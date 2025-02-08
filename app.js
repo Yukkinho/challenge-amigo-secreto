@@ -68,17 +68,22 @@ function funcao_De_Sortear_Amigos () { //função do botão Sortear Amigos
                                                                          //e atribui esse valor a variável amigoSorteado.
 
 
-    console.log(`O anúmero aleatório entre 0 e Lista de Amigos foi: ${numAleatorioEntre0EListadeAmigos}`);
+    console.log(`O número aleatório entre 0 e Lista de Amigos foi: ${numAleatorioEntre0EListadeAmigos}`);
     console.log(`O amigo sorteado foi: ${amigoSorteado}`);
     console.log(`-----`)
 
 
      // Atualiza o elemento <ul id="resultado"> com o amigo sorteado
      const resultadoUL = document.getElementById("resultadoUL");
-     resultadoUL.innerHTML = `<li>E o amigo sorteado é: ${amigoSorteado}</li>`; // Exibe o nome sorteado na tela
+     resultadoUL.innerHTML = `<li>e o amigo secreto é: ${amigoSorteado}</li>`; // Exibe o nome sorteado na tela
     
-    
-    
+
+
+
+
+     listaDeAmigosUL = document.getElementById("lista-de-amigosUL"); // Obtém a <ul> da lista
+     listaDeAmigosUL.innerHTML = "";
+     listaDeAmigos = [];
     
 }
 
