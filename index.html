@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+
+
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100;400;700;900&family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&display=swap" rel="stylesheet">
+    <title>Amigo Secreto</title>
+</head>
+
+
+
+
+
+
+<body>
+
+    <main class="conteudo-principal">
+
+        <header class="cabecalho"> 
+            <h1 class="titulo-do-cabecalho">Amigo Secreto! XD</h1>
+            <img src="assets/amigo-secreto.png" alt="Imagem representativa do filho da puta">
+        </header>
+        
+
+
+
+
+
+
+        <section class="secao-de-entrada">
+            <h2 class="titulo-da-secao-de-entrada">    Digite o nome do seus amigos :)</h2>
+
+                <div class = "divisao-secao-de-entrada" >
+                    <input type = "text"           id = "entrada-amigo"   
+                    class = "entrada-amigo"    placeholder = "Digite um nome" >
+
+
+                    <button class = "botao-de-adicionar" onclick = "funcao_De_Adicionar_Amigos()" >
+                        
+                        Adicionar  </button>
+
+                </div>
+
+
+
+                <div>
+                    <ul id="lista-de-amigosUL" class="name-list" aria-labelledby="listaAmigos" role="list"></ul>
+                    <ul id="resultadoUL" class="resultadoUL" aria-live="polite"></ul>
+                </div>
+
+
+
+
+                <div class="divisao-botao-sortear">
+
+
+                    <button class = "botao-de-sortear"   onclick = "funcao_De_Sortear_Amigos()"  aria-label="Sortear amigo secreto">
+
+                        <img src="assets/play_circle_outline.png" alt="Ícone para sortear"> Sortear amigo
+
+                    </button>
+
+
+                </div>
+
+
+
+        </section>
+    </main>
+
+
+    
+    <script src="app.js" defer></script>
+
+
+
+</body>
+</html>
